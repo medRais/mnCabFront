@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+
+@Component({
+	selector: 'first-comp',
+	template: `<h1>{{title1}} First Componenent</h1>
+			<button (click)="action()">TEST</button>
+			<input type="button" value="Click me" (onclick)="action()">`,
+	styles: [`
+		    h1 {
+			color: red;
+		    }
+		`]
+})
+export class FirstComp {
+	 title1 = 'app works fine!';
+	action() {
+		this.title1 = 'action';
+	}
+}

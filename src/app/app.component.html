@@ -1,3 +1,6 @@
 <h1>
   {{title}}
 </h1>
+<div highlight [defaultColor]="'red'" [highlightColor]="'blue'"></div>
+<first-comp [test3]="title" (eventChange)="changeParentTitle($event)" ></first-comp>
+<router-outlet></router-outlet>
